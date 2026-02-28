@@ -1,0 +1,77 @@
+\name{rAverage}
+\alias{rAverage}
+\docType{package}
+
+\title{Parameter estimation for the averaging model of Information Integration Theory}
+
+\description{
+    The R-Average package implements a method to identify the parameters of the
+    Averagingcmodel of Information Integration Theory (Anderson, 1981),
+    following the spirit of the so-called "principle of parsimony".
+    
+    \emph{Name of the parameters}:\cr
+    
+    \code{s0,w0}: initial state values of the Averaging Model.\cr
+    \code{s(k,j)}: scale value of the \code{j}-th level of \code{k}-th factor.\cr
+    \code{w(k,j)}: weight value of the \code{j}-th level of \code{k}-th factor.\cr
+}
+
+\details{
+    \tabular{ll}{
+        Package: \tab rAverage\cr
+        Type: \tab Package\cr
+        Version: \tab 0.5-8\cr
+        Date: \tab 2017-07-29\cr
+        License: \tab GNU (version 2 or later)\cr
+    }
+    
+    \emph{Functions of the R-Average package}:\cr
+    
+    \code{rav}: estimates the parameters for averaging models.\cr
+    \code{fitted}: extracts the predicted values of the best model from a \code{rav} object.\cr
+    \code{residuals}: extracts the residuals from a \code{rav} object.\cr
+    \code{coefficients}: extracts the parameters from a \code{rav} object.\cr
+    \code{outlier.replace}: given an estimated averaging model with the \code{rav} function, it
+                            detects and replace outliers from the residual matrix.
+    \code{rav.indices}: given a set of parameters \code{s} and \code{w} and a matrix of observed
+                        data, it calculates the fit indices for the averaging model.\cr
+    \code{datgen}: returns the responses \code{R} for averaging models
+                   given the set of parameters \code{s} and \code{w}.\cr
+    \code{pargen}: generates pseudorandom parameters for the averaging model.\cr
+    \code{rav.grid}: generates an empty matrix in 'rav' format.\cr
+\code{rav.single}: single subjects analysis over an aggregated data matrix.\cr
+\code{rav2file}: store the reesults of \code{rav} into a text file.\cr
+}
+
+\author{
+    \bold{Supervisor}: Prof. Giulio Vidotto \email{giulio.vidotto@unipd.it}
+    
+    University of Padova, Department of General Psychology\cr
+    QPLab: Quantitative Psychology Laboratory
+    
+    \bold{version 0.0}:\cr
+    Marco Vicentini \email{marco.vicentini@gmail.com}
+    
+    \bold{version 0.1 and following}:\cr
+    Stefano Noventa \email{stefano.noventa@univr.it}\cr
+    Davide Massidda \email{davide.massidda@gmail.com}\cr
+}
+
+\references{
+    Anderson, N. H. (1981). \emph{Foundations of Information Integration Theory}.
+    New York: Academic Press.
+    
+    Vidotto, G., Massidda, D., & Noventa, S. (2010). Averaging models: parameters
+    estimation with the R-Average procedure. \emph{Psicologica}, 31, 461-475.
+}
+
+\keyword{rAverage}
+\seealso{
+    \code{\link[rAverage]{rav}},
+    \code{\link[rAverage]{datgen}},
+    \code{\link[rAverage]{pargen}},
+    \code{\link[rAverage]{rav.indices}},
+    \code{\link[rAverage]{fmdata1}},
+    \code{\link[rAverage]{pasta}},
+    \code{\link[stats]{optim}} 
+}

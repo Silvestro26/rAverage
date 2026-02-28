@@ -1,0 +1,17 @@
+import(methods)
+import(tcltk)
+importFrom("stats", "optim", "qnorm", "rnorm", "runif", "sd")
+importFrom("utils", "write.table")
+export(
+     rav,            # Parameter estimation for averaging models
+     rav.single,     # Single subject analysis
+     datgen,         # Generate observed response for the averaging model
+     pargen,         # Generate pseudorandom parameters for the averaging model
+     rav.grid,       # Generate an empty matrix in 'rav' format
+     rav.indices,    # Calculate the fit indexes
+     rav2file,       # Export rav results
+     outlier.replace # Detect and replace outliers
+    )
+exportClasses(rav)
+exportMethods(summary,show,coef,fitted,residuals,AIC,BIC)
+useDynLib(rAverage, .registration=TRUE)
