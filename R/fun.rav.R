@@ -327,9 +327,9 @@ datgen <- function(param, lev, t.par=FALSE, trials=1, sd=0, range=NULL)
 rav.single <- function(data,...)
 {
     # La funzione lavora solo con data frame:
-    if(class(data) == "matrix")
+    if(inherits(data, "matrix"))
         data <- data.frame(data)
-    if(class(data) != "data.frame")
+    if(!inherits(data, "data.frame"))
         stop("Data must be matrix or data.frame")
     # Numero corretto di colonne della matrice:
     lev <- list(...)$lev

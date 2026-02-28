@@ -77,7 +77,7 @@ rav <- function(data, subset=NULL, mean=FALSE, lev, s.range=c(NA,NA), w.range=ex
     if(is.logical(I0)) {
         if(!I0) {
             fixed <- c(0,1e-10)
-            # Eventuale correzione di fiixed[2] e w.range sulla base di lower e upper:
+            # Eventuale correzione di fixed[2] e w.range sulla base di lower e upper:
             if(!is.null(lower)) {
                 fixed[2] <- lower[2]
                 w.range[1] <- min(lower[pos$wpos])

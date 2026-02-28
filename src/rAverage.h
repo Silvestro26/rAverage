@@ -44,7 +44,7 @@ void numpar(double *param, int *len, int *out);
 /* Calcola il numero di parametri */
 
 void parmean(double *parameters, double *deltaweights, int *sumlev, int *freedom, int *count);
-/* Media i parametri uguali entro un ceto delta */
+/* Media i parametri uguali entro un certo delta */
 
 void parmeanlast(double *param, double *fixed, int *sumlev, double *deltaweights, int *numfix, double *valfix);
 /* Come la parmean ma e' indipendente dalla residual */

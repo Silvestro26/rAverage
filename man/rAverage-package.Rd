@@ -6,7 +6,7 @@
 
 \description{
     The R-Average package implements a method to identify the parameters of the
-    Averagingcmodel of Information Integration Theory (Anderson, 1981),
+    Averaging model of Information Integration Theory (Anderson, 1981),
     following the spirit of the so-called "principle of parsimony".
     
     \emph{Name of the parameters}:\cr
@@ -40,7 +40,7 @@
     \code{pargen}: generates pseudorandom parameters for the averaging model.\cr
     \code{rav.grid}: generates an empty matrix in 'rav' format.\cr
 \code{rav.single}: single subjects analysis over an aggregated data matrix.\cr
-\code{rav2file}: store the reesults of \code{rav} into a text file.\cr
+\code{rav2file}: store the results of \code{rav} into a text file.\cr
 }
 
 \author{
