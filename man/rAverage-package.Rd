@@ -88,7 +88,7 @@
     
     Vidotto, G., Massidda, D., & Noventa, S. (2010). Averaging models: parameters
     estimation with the R-Average procedure. \emph{Psicologica}, 31, 461-475.
-    URL https://www.uv.es/psicologica/articulos3FM.10/3Vidotto.pdf
+    URL https://psicologicajournal.com/averaging-models-parameters-estimation-with-the-r-average-procedure/
     
     Vidotto, G. & Vicentini, M. (2007). A general method for parameter
     estimation of averaging models. \emph{Teorie & Modelli}, Vol. 12 (1-2), 211-221.
